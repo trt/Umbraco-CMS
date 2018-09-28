@@ -220,6 +220,8 @@ namespace Umbraco.Core.Configuration.UmbracoSettings
             get { return Imaging.ImageAutoFillProperties; }
         }
 
+        string IContentSection.SvgDefaultSize => "200";
+
         bool IContentSection.ScriptEditorDisable
         {
             get { return ScriptEditor.ScriptEditorDisable; }
